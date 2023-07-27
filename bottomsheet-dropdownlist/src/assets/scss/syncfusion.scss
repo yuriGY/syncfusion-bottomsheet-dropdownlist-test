@@ -1,0 +1,544 @@
+@use '@angular/material' as mat;
+@use '../../assets/scss/theme-variables.scss' as theme;
+
+@import '@syncfusion/ej2-base/styles/material.css';
+@import '@syncfusion/ej2-buttons/styles/material.css';
+@import '@syncfusion/ej2-popups/styles/material.css';
+@import '@syncfusion/ej2-splitbuttons/styles/material.css';
+@import '@syncfusion/ej2-inputs/styles/material.css';
+@import '@syncfusion/ej2-dropdowns/styles/material.css';
+@import '@syncfusion/ej2-navigations/styles/material.css';
+@import '@syncfusion/ej2-richtexteditor/styles/material.css';
+@import '@syncfusion/ej2-icons/styles/material.css';
+@import '@syncfusion/ej2-lists/styles/material.css';
+@import '@syncfusion/ej2-treegrid/styles/material.css';
+
+
+// grid header
+.e-columnheader .e-headercell {
+  background-color: #f9fafa;
+
+  span {
+    font-weight: 600;
+    font-size: 14px;
+  }
+}
+
+.e-grid .e-altrow {
+  background-color: #fafafa;
+}
+
+// grid grouping
+.e-groupdroparea {
+  text-align: center !important;
+  background-color: transparent !important;
+  font-weight: 500 !important;
+
+  &.e-grouped {
+    padding: 32px 0 8px 0 !important;
+
+    .e-groupheadercell {
+      background: mat.get-color-from-palette(theme.$primary-palette, 500);
+
+      .e-grouptext {
+        width: auto !important;
+      }
+    }
+  }
+}
+
+// page options
+.e-gridpager .e-pagercontainer .e-numericcontainer .e-currentitem {
+  background: mat.get-color-from-palette(theme.$primary-palette, 500);
+  border-radius: 3px;
+}
+
+// context menu column chooser
+.e-menu-item .e-checkbox-wrapper .e-check {
+  background: mat.get-color-from-palette(theme.$primary-palette, 500) !important;
+}
+
+.e-popup {
+  *.e-active {
+    color: mat.get-color-from-palette(theme.$primary-palette, 500) !important;
+  }
+}
+
+// input
+.e-input-group:not(.e-float-icon-left):not(.e-float-input)::before,
+.e-input-group:not(.e-float-icon-left):not(.e-float-input)::after,
+.e-input-group.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::before,
+.e-input-group.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::after,
+.e-input-group.e-control-wrapper:not(.e-float-icon-left):not(.e-float-input)::before,
+.e-input-group.e-control-wrapper:not(.e-float-icon-left):not(.e-float-input)::after,
+.e-input-group.e-control-wrapper.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::before,
+.e-input-group.e-control-wrapper.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::after {
+  background: mat.get-color-from-palette(theme.$primary-palette, 500) !important;
+}
+
+ejs-multiselect,
+ejs-dropdowntree {
+  padding: 7px 0 7px 0 !important;
+}
+
+span.e-searcher>input,
+ejs-dropdowntree>span>input {
+  font-size: 16px !important;
+  font-weight: 400 !important;
+}
+
+// input selection
+input.e-input::selection,
+textarea.e-input::selection,
+.e-input-group input.e-input::selection,
+.e-input-group.e-control-wrapper input.e-input::selection,
+.e-float-input input::selection,
+.e-float-input.e-control-wrapper input::selection,
+.e-input-group textarea.e-input::selection,
+.e-input-group.e-control-wrapper textarea.e-input::selection,
+.e-float-input textarea::selection,
+.e-float-input.e-control-wrapper textarea::selection {
+  background: mat.get-color-from-palette(theme.$primary-palette, 500) !important;
+}
+
+//numeric input
+.e-control-wrapper.e-numeric.e-float-input.e-style .e-float-line::before {
+  background: mat.get-color-from-palette(theme.$primary-palette, 500) !important;
+}
+
+.e-control-wrapper.e-numeric.e-float-input.e-style .e-float-line::after {
+  background: mat.get-color-from-palette(theme.$primary-palette, 500) !important;
+}
+
+.e-float-input.e-control-wrapper:not(.e-error) input:focus~label.e-float-text,
+.e-float-input.e-control-wrapper.e-bigger:not(.e-error) input:focus~label.e-float-text,
+.e-bigger .e-float-input.e-control-wrapper:not(.e-error) input:focus~label.e-float-text,
+.e-float-input.e-control-wrapper:not(.e-error).e-input-focus input~label.e-float-text,
+.e-float-input.e-control-wrapper.e-bigger:not(.e-error).e-input-focus input~label.e-float-text,
+.e-bigger .e-float-input.e-control-wrapper:not(.e-error).e-input-focus input~label.e-float-text {
+  color: mat.get-color-from-palette(theme.$primary-palette, 500) !important;
+}
+
+//radio
+.e-radio:checked + label::before {
+  border-color: mat.get-color-from-palette(theme.$primary-palette, 500) !important;
+}
+
+.e-radio:checked + label::after {
+  background-color: mat.get-color-from-palette(theme.$primary-palette, 500) !important;
+  color: mat.get-color-from-palette(theme.$primary-palette, 500) !important;
+}
+
+//flat button
+.e-btn.e-flat.e-primary, .e-css.e-btn.e-flat.e-primary {
+  color: mat.get-color-from-palette(theme.$primary-palette, 500) !important;
+}
+
+.e-btn.e-flat.e-primary:hover, .e-css.e-btn.e-flat.e-primary:hover {
+  background-color: rgba(27, 117, 187, 0.04) !important;
+}
+
+.e-btn.e-flat.e-primary:focus, .e-css.e-btn.e-flat.e-primary:focus {
+  background-color: rgba(27, 117, 187, 0.12) !important;
+}
+
+// multi select
+.e-multi-select-wrapper {
+  mat-icon {
+    width: unset;
+    margin-top: 2px;
+  }
+
+  .e-chips.e-mob-chip.e-chip-selected {
+    padding: 0 0 0 0px;
+    width: 75%;
+  }
+
+  .e-chips {
+    padding: 0 4px 0 0px;
+  }
+}
+
+.multi-select-name {
+  display: block !important;
+  font-size: 14px;
+  margin-bottom: -6px;
+}
+
+.multi-select-email {
+  font-size: 12px;
+  margin-top: -10px;
+}
+
+.multi-select-image {
+  margin: 6px 16px;
+  size: 50px;
+  float: left;
+}
+
+.multi-select-chips-text {
+  padding: 0 0 0 28px;
+  line-height: 1.2em;
+  bottom: 24px;
+  margin-top: 4px;
+}
+
+.multi-select-chips {
+  border-radius: 50%;
+  float: left;
+  margin-top: -6px;
+  position: relative;
+  left: 0px;
+  height: 26px;
+  width: 26px;
+}
+
+.material {
+  .multi-select-chips {
+    margin-top: 15px;
+  }
+
+  .multi-select-chips-text {
+    width: 114px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 0 0 36px;
+    position: relative;
+    bottom: 20px;
+    margin-right: -24px;
+  }
+}
+
+.e-bigger {
+  margin: 10px 16px;
+
+  .multi-select-image {
+    margin: 10px 16px;
+  }
+
+  .multi-select-email {
+    margin-top: -16px;
+  }
+
+  .multi-select-chips {
+    height: 32px;
+    width: 32px;
+    margin-top: 15px;
+  }
+
+  .e-dropdownbase {
+    .e-list-item {
+      line-height: 40px;
+      height: 80px;
+      display: block;
+      text-indent: 0;
+    }
+  }
+}
+
+// checkbox
+.e-checkbox-wrapper .e-frame.e-check,
+.e-css.e-checkbox-wrapper .e-frame.e-check {
+  background-color: mat.get-color-from-palette(theme.$primary-palette, 500) !important;
+}
+
+.e-checkbox-wrapper:hover .e-frame.e-check,
+.e-css.e-checkbox-wrapper:hover .e-frame.e-check {
+  border-color: transparent;
+  color: #fff;
+}
+
+
+// tree
+.e-treeview .e-list-item.e-active>.e-text-content,
+.e-treeview .e-list-item.e-active>.e-text-content .e-list-text {
+  color: mat.get-color-from-palette(theme.$primary-palette, 500) !important;
+}
+
+// dropdown button color picker
+#dropdownBtn .e-btn-icon.e-dropdownbtn-preview {
+  background-color: #ffffff;
+  height: 18px;
+  width: 18px;
+}
+
+.e-btn-icon {
+  margin-top: 0;
+}
+
+.e-right-tick:before {
+  content: '\e7ff';
+}
+
+.e-save-as:before {
+  content: '\e704';
+}
+
+// dropdown tree icons
+.e-add-new:before {
+  content: '\e823';
+  font-family: 'e-icons';
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.dropdowntree-icons .e-treeview .e-list-icon.e-add-new:before {
+  background-position: -10px -272px;
+}
+
+.dropdowntree-icon .control_wrapper {
+  max-width: 320px;
+  margin: 0 auto;
+  padding-top: 25px;
+}
+
+.e-icon_element.e-icons {
+  margin-right: 10px;
+}
+
+.e-icon_element.e-icons:before {
+  line-height: 3;
+}
+
+.dropdowntree-icons .e-treeview .e-list-icon {
+  background-repeat: no-repeat;
+  height: 20px;
+}
+
+// rich text editor
+.e-richtexteditor.e-rte-tb-expand.error {
+  border: 1px solid red !important;
+}
+
+.e-richtexteditor > .e-rte-content {
+  height: 95.35%!important;
+}
+
+// split button
+.e-split-btn-wrapper .e-split-btn {
+  font-size: 14px;
+  border-radius: 3px 0px 0px 3px !important;
+  margin-left: 10px !important;
+}
+
+.e-split-btn-wrapper .e-btn {
+  background-color: mat.get-color-from-palette(theme.$primary-palette, 500);
+  color: white;
+  border-left: 2px solid mat.get-color-from-palette(theme.$primary-palette, 700);
+  padding: 4% 6%;
+  border-radius: 0px 3px 3px 0px;
+}
+
+.e-split-btn-wrapper {
+  margin-right: 20px !important;
+}
+
+.e-split-btn-wrapper :hover {
+  background-color: mat.get-color-from-palette(theme.$primary-palette, 700);
+}
+
+.e-split-btn-wrapper :disabled {
+  background-color: rgba(0, 0, 0, 0.12);
+  color: rgba(0, 0, 0, 0.26);
+  border-left: none;
+}
+
+// switch
+.e-switch-wrapper .e-switch-handle.e-switch-active,
+.e-css.e-switch-wrapper .e-switch-handle.e-switch-active,
+.e-switch-wrapper:hover .e-switch-handle.e-switch-active,
+.e-css.e-switch-wrapper:hover .e-switch-handle.e-switch-active,
+.e-switch-wrapper:hover .e-switch-inner.e-switch-active .e-switch-on,
+.e-css.e-switch-wrapper:hover .e-switch-inner.e-switch-active .e-switch-on,
+.e-switch-wrapper .e-switch-on,
+.e-css.e-switch-wrapper .e-switch-on {
+  background-color: #6AA8A7;
+}
+
+.e-contextmenu-wrapper ul .e-menu-item.e-blankicon {
+  padding-left: 16px !important;
+}
+
+.e-righttick:before {
+  content: '\e7ff';
+  color: #000000;
+}
+
+.e-right {
+  padding-left: 14px;
+}
+
+.e-grid tr:hover {
+  cursor: pointer;
+}
+
+.e-richtexteditor .e-toolbar-wrapper {
+  height: 42px !important;
+}
+
+/*CSS FORM REPORT SYNCFUSION*/
+input.e-input::selection,
+textarea.e-input::selection,
+.e-input-group input.e-input::selection,
+.e-input-group.e-control-wrapper input.e-input::selection,
+.e-float-input input::selection,
+.e-float-input.e-control-wrapper input::selection,
+.e-input-group textarea.e-input::selection,
+.e-input-group.e-control-wrapper textarea.e-input::selection,
+.e-float-input textarea::selection,
+.e-float-input.e-control-wrapper textarea::selection,
+.e-float-line::before,
+.e-float-line::after,
+.e-label-top::before,
+.e-label-top::after,
+.e-float-input.e-small textarea::selection,
+.e-float-input textarea::selection {
+  background: #6AA8A7 !important;
+  color: #6AA8A7 !important;
+}
+
+.e-float-input:not(.e-error) input:focus~label.e-float-text,
+.e-float-input.e-bigger:not(.e-error) input:focus~label.e-float-text,
+.e-bigger .e-float-input:not(.e-error) input:focus~label.e-float-text,
+.e-float-input.e-small:not(.e-error) input:focus~label.e-float-text,
+.e-small .e-float-input:not(.e-error) input:focus~label.e-float-text,
+.e-float-input:not(.e-error) input[readonly]:focus~label.e-label-top.e-float-text,
+.e-float-input.e-bigger:not(.e-error) input[readonly]:focus~label.e-label-top.e-float-text,
+.e-bigger .e-float-input:not(.e-error) input[readonly]:focus~label.e-label-top.e-float-text,
+.e-float-input.e-control-wrapper:not(.e-error) input[readonly]:focus~label.e-label-top.e-float-text,
+.e-float-input.e-control-wrapper.e-bigger:not(.e-error) input[readonly]:focus~label.e-label-top.e-float-text,
+.e-bigger .e-float-input.e-control-wrapper:not(.e-error) input[readonly]:focus~label.e-label-top.e-float-text,
+.e-float-input.e-small:not(.e-error) input[readonly]:focus~label.e-float-text,
+.e-small .e-float-input:not(.e-error) input[readonly]:focus~label.e-float-text.e-label-top,
+.e-float-input.e-small.e-bigger:not(.e-error) input[readonly]:focus~label.e-label-top.e-float-text,
+.e-bigger .e-float-input.e-small:not(.e-error) input[readonly]:focus~label.e-label-top.e-float-text,
+.e-float-input.e-control-wrapper.e-small:not(.e-error) input[readonly]:focus~label.e-float-text,
+.e-small .e-float-input.e-control-wrapper:not(.e-error) input[readonly]:focus~label.e-float-text.e-label-top,
+.e-float-input.e-control-wrapper.e-small.e-bigger:not(.e-error) input[readonly]:focus~label.e-label-top.e-float-text,
+.e-bigger .e-float-input.e-control-wrapper.e-small:not(.e-error) input[readonly]:focus~label.e-label-top.e-float-text,
+.e-float-input:not(.e-error).e-input-focus input[readonly]~label.e-label-top.e-float-text,
+.e-float-input.e-bigger:not(.e-error).e-input-focus input[readonly]~label.e-label-top.e-float-text,
+.e-bigger .e-float-input:not(.e-error).e-input-focus input[readonly]~label.e-label-top.e-float-text,
+.e-float-input.e-control-wrapper:not(.e-error).e-input-focus input[readonly]~label.e-label-top.e-float-text,
+.e-float-input.e-control-wrapper.e-bigger:not(.e-error).e-input-focus input[readonly]~label.e-label-top.e-float-text,
+.e-bigger .e-float-input.e-control-wrapper:not(.e-error).e-input-focus input[readonly]~label.e-label-top.e-float-text,
+.e-float-input.e-small:not(.e-error).e-input-focus input[readonly]~label.e-float-text,
+.e-small .e-float-input:not(.e-error).e-input-focus input[readonly]~label.e-float-text.e-label-top,
+.e-float-input.e-small.e-bigger:not(.e-error).e-input-focus input[readonly]~label.e-label-top.e-float-text,
+.e-bigger .e-float-input.e-small:not(.e-error).e-input-focus input[readonly]~label.e-label-top.e-float-text,
+.e-float-input.e-control-wrapper.e-small:not(.e-error).e-input-focus input[readonly]~label.e-float-text,
+.e-small .e-float-input.e-control-wrapper:not(.e-error).e-input-focus input[readonly]~label.e-float-text.e-label-top,
+.e-float-input.e-control-wrapper.e-small.e-bigger:not(.e-error).e-input-focus input[readonly]~label.e-label-top.e-float-text,
+.e-bigger .e-float-input.e-control-wrapper.e-small:not(.e-error).e-input-focus input[readonly]~label.e-label-top.e-float-text,
+.e-float-input:not(.e-error) textarea[readonly]:focus~label.e-label-top.e-float-text,
+.e-float-input.e-bigger:not(.e-error) textarea[readonly]:focus~label.e-label-top.e-float-text,
+.e-bigger .e-float-input:not(.e-error) textarea[readonly]:focus~label.e-label-top.e-float-text,
+.e-float-input.e-control-wrapper:not(.e-error) textarea[readonly]:focus~label.e-label-top.e-float-text,
+.e-float-input.e-control-wrapper.e-bigger:not(.e-error) textarea[readonly]:focus~label.e-label-top.e-float-text,
+.e-bigger .e-float-input.e-control-wrapper:not(.e-error) textarea[readonly]:focus~label.e-label-top.e-float-text,
+.e-float-input.e-small:not(.e-error) textarea[readonly]:focus~label.e-float-text,
+.e-small .e-float-input:not(.e-error) textarea[readonly]:focus~label.e-float-text.e-label-top,
+.e-float-input.e-small.e-bigger:not(.e-error) textarea[readonly]:focus~label.e-label-top.e-float-text,
+.e-bigger .e-float-input.e-small:not(.e-error) textarea[readonly]:focus~label.e-label-top.e-float-text .e-float-input.e-control-wrapper.e-small:not(.e-error) textarea[readonly]:focus~label.e-float-text,
+.e-small .e-float-input.e-control-wrapper:not(.e-error) textarea[readonly]:focus~label.e-float-text.e-label-top,
+.e-float-input.e-control-wrapper.e-small.e-bigger:not(.e-error) textarea[readonly]:focus~label.e-label-top.e-float-text,
+.e-bigger .e-float-input.e-control-wrapper.e-small:not(.e-error) textarea[readonly]:focus~label.e-label-top.e-float-text,
+.e-float-input:not(.e-error).e-input-focus textarea[readonly]~label.e-label-top.e-float-text,
+.e-float-input.e-bigger:not(.e-error).e-input-focus textarea[readonly]~label.e-label-top.e-float-text,
+.e-bigger .e-float-input:not(.e-error).e-input-focus textarea[readonly]~label.e-label-top.e-float-text,
+.e-float-input.e-control-wrapper:not(.e-error).e-input-focus textarea[readonly]~label.e-label-top.e-float-text,
+.e-float-input.e-control-wrapper.e-bigger:not(.e-error).e-input-focus textarea[readonly]~label.e-label-top.e-float-text,
+.e-bigger .e-float-input.e-control-wrapper:not(.e-error).e-input-focus textarea[readonly]~label.e-label-top.e-float-text,
+.e-float-input.e-small:not(.e-error).e-input-focus textarea[readonly]~label.e-float-text,
+.e-small .e-float-input:not(.e-error).e-input-focus textarea[readonly]~label.e-float-text.e-label-top,
+.e-float-input.e-small.e-bigger:not(.e-error).e-input-focus textarea[readonly]~label.e-label-top.e-float-text,
+.e-bigger .e-float-input.e-small:not(.e-error).e-input-focus textarea[readonly]~label.e-label-top.e-float-text .e-float-input.e-control-wrapper.e-small:not(.e-error).e-input-focus textarea[readonly]~label.e-float-text,
+.e-small .e-float-input.e-control-wrapper:not(.e-error).e-input-focus textarea[readonly]~label.e-float-text.e-label-top,
+.e-float-input.e-control-wrapper.e-small.e-bigger:not(.e-error).e-input-focus textarea[readonly]~label.e-label-top.e-float-text,
+.e-bigger .e-float-input.e-control-wrapper.e-small:not(.e-error).e-input-focus textarea[readonly]~label.e-label-top.e-float-text,
+.e-float-input.e-small.e-bigger:not(.e-error) input:focus~label.e-float-text,
+.e-bigger .e-float-input.e-small:not(.e-error) input:focus~label.e-float-text,
+.e-float-input:not(.e-error) textarea:focus~label.e-float-text,
+.e-float-input.e-bigger:not(.e-error) textarea:focus~label.e-float-text,
+.e-bigger .e-float-input:not(.e-error) textarea:focus~label.e-float-text,
+.e-float-input.e-small:not(.e-error) textarea:focus~label.e-float-text,
+.e-small .e-float-input:not(.e-error) textarea:focus~label.e-float-text,
+.e-float-input.e-small.e-bigger:not(.e-error) textarea:focus~label.e-float-text,
+.e-bigger .e-float-input.e-small:not(.e-error) textarea:focus~label.e-float-text,
+.e-float-input.e-control-wrapper:not(.e-error) input:focus~label.e-float-text,
+.e-float-input.e-control-wrapper.e-bigger:not(.e-error) input:focus~label.e-float-text,
+.e-bigger .e-float-input.e-control-wrapper:not(.e-error) input:focus~label.e-float-text,
+.e-float-input.e-control-wrapper.e-small:not(.e-error) input:focus~label.e-float-text,
+.e-small .e-float-input.e-control-wrapper:not(.e-error) input:focus~label.e-float-text,
+.e-float-input.e-control-wrapper.e-small.e-bigger:not(.e-error) input:focus~label.e-float-text,
+.e-bigger .e-float-input.e-control-wrapper.e-small:not(.e-error) input:focus~label.e-float-text,
+.e-float-input.e-control-wrapper:not(.e-error) textarea:focus~label.e-float-text,
+.e-float-input.e-control-wrapper.e-bigger:not(.e-error) textarea:focus~label.e-float-text,
+.e-bigger .e-float-input.e-control-wrapper:not(.e-error) textarea:focus~label.e-float-text,
+.e-float-input.e-control-wrapper.e-small:not(.e-error) textarea:focus~label.e-float-text,
+.e-small .e-float-input.e-control-wrapper:not(.e-error) textarea:focus~label.e-float-text,
+.e-float-input.e-control-wrapper.e-small.e-bigger:not(.e-error) textarea:focus~label.e-float-text,
+.e-bigger .e-float-input.e-control-wrapper.e-small:not(.e-error) textarea:focus~label.e-float-text,
+.e-float-input:not(.e-error).e-input-focus input~label.e-float-text,
+.e-float-input.e-bigger:not(.e-error).e-input-focus input~label.e-float-text,
+.e-bigger .e-float-input:not(.e-error).e-input-focus input~label.e-float-text,
+.e-float-input.e-small:not(.e-error).e-input-focus input~label.e-float-text,
+.e-small .e-float-input:not(.e-error).e-input-focus input~label.e-float-text,
+.e-float-input.e-small.e-bigger:not(.e-error).e-input-focus input~label.e-float-text,
+.e-bigger .e-float-input.e-small:not(.e-error).e-input-focus input~label.e-float-text,
+.e-float-input.e-control-wrapper:not(.e-error).e-input-focus input~label.e-float-text,
+.e-float-input.e-control-wrapper.e-bigger:not(.e-error).e-input-focus input~label.e-float-text,
+.e-bigger .e-float-input.e-control-wrapper:not(.e-error).e-input-focus input~label.e-float-text,
+.e-float-input.e-control-wrapper.e-small:not(.e-error).e-input-focus input~label.e-float-text,
+.e-small .e-float-input.e-control-wrapper:not(.e-error).e-input-focus input~label.e-float-text,
+.e-float-input.e-control-wrapper.e-small.e-bigger:not(.e-error).e-input-focus input~label.e-float-text,
+.e-bigger .e-float-input.e-control-wrapper.e-small:not(.e-error).e-input-focus input~label.e-float-text {
+  color: #6AA8A7 !important;
+}
+
+input.e-input::selection,
+textarea.e-input::selection,
+.e-input-group input.e-input::selection,
+.e-input-group.e-control-wrapper input.e-input::selection,
+.e-float-input input::selection,
+.e-float-input.e-control-wrapper input::selection,
+.e-input-group textarea.e-input::selection,
+.e-input-group.e-control-wrapper textarea.e-input::selection,
+.e-float-input textarea::selection,
+.e-float-input.e-control-wrapper textarea::selection {
+  background-color: #338fff !important;
+  color: white !important;
+}
+
+
+/*Change the selection color*/
+.e-float-input.e-small textarea::selection,
+.e-float-input textarea::selection,
+.e-float-input input::selection,
+.e-float-input.e-control-wrapper input::selection {
+  background-color: #338fff !important;
+  color: white !important;
+}
+
+@font-face {
+  font-family: 'e-grid-rowheight';
+  src:
+    url(data:application/x-font-ttf;charset=utf-8;base64,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) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.e-small-icon::before {
+  font-family: 'e-grid-rowheight';
+  content: '\e702';
+}
+
+.e-medium-icon::before {
+  font-family: 'e-grid-rowheight';
+  content: '\e701';
+}
+
+.e-more-icon::before {
+  font-family: 'e-icons';
+  content: '\e571';
+}

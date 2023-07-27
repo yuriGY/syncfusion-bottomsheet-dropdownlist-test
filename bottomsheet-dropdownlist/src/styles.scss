@@ -1,0 +1,49 @@
+@import './assets/scss/syncfusion.scss';
+
+.mat-icon {
+  overflow: unset !important;
+}
+
+.qex-loading-spinner {
+  margin-top: 20%;
+  min-height: 150px;
+}
+
+.mat-button-toggle-checked {
+  background-color: #1b75bb !important;
+  color: white !important;
+}
+
+.mat-icon {
+  vertical-align: middle;
+}
+
+.mat-button-toggle-label-content {
+  line-height: 32px !important;
+}
+
+.mat-stroked-button {
+  border: 1px solid !important;
+}
+
+.mat-form-field-label {
+  font-size: 13px !important;
+}
+
+.mat-form-field:not(.mat-focused, .mat-form-field-invalid) {
+  .mat-form-field-label {
+    color: rgba(0, 0, 0, 0.42) !important;
+  }
+}
+
+.mat-form-field.mat-form-field-should-float {
+  .mat-form-field-label {
+    font-size: 14px !important;
+  }
+}
+
+.mat-form-field.mat-form-field-should-float:not(.mat-focused) {
+  .mat-form-field-label {
+    color: rgba(0, 0, 0, 0.54) !important;
+  }
+}

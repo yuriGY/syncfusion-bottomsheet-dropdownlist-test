@@ -1,0 +1,120 @@
+@use 'sass:map';
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+$app-primary: (
+  50: #e4eef7,
+  100: #bbd6eb,
+  200: #8dbadd,
+  300: #5f9ecf,
+  400: #3d8ac5,
+  500: #1b75bb,
+  600: #186db5,
+  700: #1462ac,
+  800: #1058a4,
+  900: #084596,
+  A100: #c3d9ff,
+  A200: #90baff,
+  A400: #5d9aff,
+  A700: #438aff,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+
+$app-accent: (
+  50 : #edf5f4,
+  100 : #d2e5e5,
+  200 : #b5d4d3,
+  300 : #97c2c1,
+  400 : #80b5b4,
+  500 : #6aa8a7,
+  600 : #62a09f,
+  700 : #579796,
+  800 : #4d8d8c,
+  900 : #3c7d7c,
+  A100 : #cffffe,
+  A200 : #9cfffe,
+  A400 : #69fffd,
+  A700 : #50fffc,
+  contrast: (
+      50 : #000000,
+      100 : #000000,
+      200 : #000000,
+      300 : #000000,
+      400 : #000000,
+      500 : #ffffff,
+      600 : #ffffff,
+      700 : #ffffff,
+      800 : #ffffff,
+      900 : #ffffff,
+      A100 : #000000,
+      A200 : #000000,
+      A400 : #000000,
+      A700 : #000000,
+  )
+);
+
+$app-warn: (
+  50: #fee8e7,
+  100: #fcc7c3,
+  200: #faa19b,
+  300: #f77b72,
+  400: #f65f54,
+  500: #f44336,
+  600: #f33d30,
+  700: #f13429,
+  800: #ef2c22,
+  900: #ec1e16,
+  A100: #ffffff,
+  A200: #ffe9e9,
+  A400: #ffb8b6,
+  A700: #ff9f9c,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+
+$app-theme-primary: mat.define-palette($app-primary);
+$app-theme-accent: mat.define-palette($app-accent);
+$app-theme-warn: mat.define-palette($app-warn);
+
+$app-theme: mat.define-light-theme((
+  color: (
+    primary: $app-theme-primary,
+    accent: $app-theme-accent,
+    warn: $app-theme-warn
+  )
+));
+
+@include mat.core-theme($app-theme);
+
+$primary-palette: map.get($app-theme, 'primary');
+$accent-palette: map.get($app-theme, 'accent');

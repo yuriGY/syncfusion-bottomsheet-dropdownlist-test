@@ -1,0 +1,17 @@
+<ejs-dropdownlist
+  id="cboCategories"
+  #cboCategories
+  [dataSource]="categories"
+  [ignoreAccent]="true"
+  [ignoreCase]="true"
+  allowFiltering="true"
+  filterBarPlaceholder="Search"
+  filterType="contains"
+  [changeOnBlur]="false"
+  formControlName="categoryId"
+  [fields]="{ value: 'id', text: 'title', iconCss: 'icon'}"
+  placeholder="Category"
+  noRecordsTemplate="Not found"
+  floatLabelType="Auto"
+>
+</ejs-dropdownlist>

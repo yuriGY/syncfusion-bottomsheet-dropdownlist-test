@@ -1,0 +1,93 @@
+.form-wrapper {
+  padding: 0 2vw 0 2vw;
+}
+
+.qex-page-inner-content {
+  padding: 2em 2em 1em !important;
+}
+
+h6 {
+  font-size: 16px !important;
+  color: #e73c6f !important;
+  font-weight: 500 !important;
+  margin: 0 0 7px 0 !important;
+}
+
+h3 {
+  font-size: 20px !important;
+  font-weight: 500 !important;
+  margin: 0 0 7px 0 !important;
+}
+
+.label-text {
+  font-size: 13px !important;
+}
+
+.section {
+  padding: 0 0 32px 0;
+}
+
+.input-padding {
+  padding: 16px 0 16px 0;
+}
+
+.mat-radio-button {
+  padding: 8px 0 8px 0;
+}
+
+//Warning richtext count color
+.e-richtexteditor .e-rte-character-count.e-warning {
+  color: #000;
+  opacity: 00.54;
+}
+
+//Normal richtext count color
+.e-richtexteditor .e-rte-character-count {
+  color: #000;
+  opacity: 00.54;
+}
+
+//Error richtext count color
+.e-richtexteditor .e-rte-character-count.e-error {
+  color: #000;
+  opacity: 00.54;
+}
+
+.e-switch-wrapper.bar-color .e-switch-inner.e-switch-active,
+.e-switch-inner.e-switch-active .e-switch-on {
+  background-color: #bad5ea;
+  border-color: #bad5ea;
+}
+
+.e-switch-wrapper.handle-color .e-switch-handle,
+.e-switch-wrapper.handle-color:not(.e-switch-disabled):hover .e-switch-handle:not(.e-switch-active) {
+  background-color: #f1f1f1;
+}
+
+.e-switch-wrapper.handle-color .e-switch-handle.e-switch-active {
+  background-color: #1b75bb
+}
+
+::ng-deep #responsibleUserId {
+  .e-multi-select-wrapper {
+    height: 30px !important;
+  }
+}
+
+.toggle-button {
+  margin-bottom: 15px;
+}
+
+ejs-dropdownlist {
+  margin-top: 15px;
+}
+
+.value-template {
+  padding-top: 3px;
+  margin-left: 3px;
+  font-size: 13px;
+}
+
+.input-time {
+  margin-top: 4.5px !important;
+}
